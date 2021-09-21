@@ -1,0 +1,21 @@
+.controls {
+    margin: 16px;
+    padding: 16px;
+
+    background-color: white;
+}
+
+.btn {
+  background-color: transparent;
+  color: black;
+  padding: 8px 16px;
+  font-weight: bold;  
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+    color: orangered;
+    background-color: orange;
+    border-radius: 100px;
+}

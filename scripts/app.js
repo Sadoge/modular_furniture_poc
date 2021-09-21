@@ -89,6 +89,20 @@ controls.autoRotateSpeed = 0.2;
 //Registering input listeners
 var widthInput = document.getElementById('width-input');
 widthInput.addEventListener('change', updateWidth);
+// var widthBtn = document.getElementById('width-btn');
+// widthBtn.onClick = function (event) {
+//     console.log(event);
+//     //makeActive(widthBtn); 
+// }
+
+// var depthBtn = document.getElementById('depth-btn');
+// depthBtn.onClick = function (event) { makeActive(depthBtn); }
+
+// var heightBtn = document.getElementById('height-btn');
+// heightBtn.onClick = function (event) { makeActive(heightBtn); }
+
+// var colorBtn = document.getElementById('color-btn');
+// colorBtn.onClick = function (event) { makeActive(colorBtn); }
 
 var heightInput = document.getElementById('height-input');
 heightInput.addEventListener('change', updateHeight);
@@ -98,6 +112,11 @@ rowHeightInput.addEventListener('change', updateRowHeight);
 
 var depthInput = document.getElementById('depth-input');
 depthInput.addEventListener('change', updateDepth);
+
+function makeActive(btn) {
+    console.log(btn + ' was clicked');
+    btn.classList.add("active");
+}
 
 function updateWidth() {
     width = widthInput.value;

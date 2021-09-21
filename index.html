@@ -11,6 +11,7 @@
     <title>Modular furniture</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/controls.css">
 
     <!-- We add the loader CSS here so that assets don't pop in before the bundled CSS is loaded -->
     <style>
@@ -74,16 +75,20 @@
         <div id="js-tray" class="tray">
             <div id="js-tray-slide" class="tray__slide"></div>
         </div>
+        <!-- <button id="width-btn" class="btn">WIDTH</button>
+        <button id="height-btn" class="btn">HEIGHT</button>
+        <button id="depth-btn" class="btn">DEPTH</button>
+        <button id="color-btn" class="btn">COLOR</button> -->
 
         <div id="user-input">
             <form id="grid-form"><br>
-                <label for="width">Width</label><br>
+                <label for="width">Width</label>
                 <input type="text" id="width-input" name="width"><br><br>
-                <label for="height">Height</label><br>
+                <label for="height">Height</label>
                 <input type="text" id="height-input" name="height"><br><br>
-                <label for="row-height">Row height</label><br>
+                <label for="row-height">Row height</label>
                 <input type="text" id="row-height-input" name="row-height"><br><br>
-                <label for="depth">Depth</label><br>
+                <label for="depth">Depth</label>
                 <input type="text" id="depth-input" name="depth">
             </form>
             <br>
